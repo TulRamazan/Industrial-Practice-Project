@@ -1,0 +1,52 @@
+{
+    "protocol_id": "PROTO-5BE7D161",
+    "date": "2026-06-30",
+    "metadata": {
+        "auditor": "Тулентай Рамазан Ерболулы",
+        "academic_group": "BDA-2407",
+        "organization": "ТОО «TLab Technologies»"
+    },
+    "compliance_framework": {
+        "standards": [
+            "СТ РК 1073",
+            "Закон РК О персональных данных и их защите"
+        ]
+    },
+    "test_cases": [
+        {
+            "case_id": "TC-01",
+            "component": "Authentication",
+            "action": "Empty input block verification",
+            "status": "Passed",
+            "execution_time_ms": 12
+        },
+        {
+            "case_id": "TC-02",
+            "component": "Data Masking",
+            "action": "Masking personal data (IIN: 06******26)",
+            "status": "Passed",
+            "execution_time_ms": 8
+        },
+        {
+            "case_id": "TC-03",
+            "component": "Cryptography",
+            "action": "SHA-256 integrity check for stored hashes (FIPS 140-3)",
+            "status": "Passed",
+            "execution_time_ms": 15
+        },
+        {
+            "case_id": "TC-04",
+            "component": "Source Code Analysis",
+            "action": "SAST scanning for undocumented capabilities (NDV check)",
+            "status": "Passed",
+            "execution_time_ms": 22
+        },
+        {
+            "case_id": "TC-05",
+            "component": "Attack Protection",
+            "action": "SQL Injection and DDoS resilience stress testing",
+            "status": "Passed",
+            "execution_time_ms": 19
+        }
+    ]
+}
